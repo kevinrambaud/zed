@@ -1811,7 +1811,8 @@ impl EditorElement {
         Vec<Option<(FoldStatus, BufferRow, bool)>>,
     ) {
         let font_size = self.style.text.font_size.to_pixels(cx.rem_size());
-        let include_line_numbers = snapshot.mode == EditorMode::Full;
+        let include_line_numbers =
+            snapshot.mode == EditorMode::Full && EditorSettings::get_global(cx).show_line_numbers;
         let mut shaped_line_numbers = Vec::with_capacity(rows.len());
         let mut fold_statuses = Vec::with_capacity(rows.len());
         let mut line_number = String::new();

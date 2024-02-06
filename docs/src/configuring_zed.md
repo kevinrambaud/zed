@@ -639,6 +639,16 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
+## Show Line Numbers
+
+- Description: Whether or not to show line numbers in the editor.
+- Setting: `show_line_numbers`
+- Default: `true`
+
+**Options**
+
+`boolean` values
+
 ## Completion Documentation Debounce Delay
 
 - Description: The debounce delay before re-querying the language server for completion documentation when not included in original completion list.

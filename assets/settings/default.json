@@ -62,6 +62,8 @@
   // Whether to display inline and alongside documentation for items in the
   // completions menu
   "show_completion_documentation": true,
+  // Whether to show the line numbers in the editor.
+  "show_line_numbers": true,
   // The debounce delay before re-querying the language server for completion
   // documentation when not included in original completion list.
   "completion_documentation_secondary_query_debounce": 300,
